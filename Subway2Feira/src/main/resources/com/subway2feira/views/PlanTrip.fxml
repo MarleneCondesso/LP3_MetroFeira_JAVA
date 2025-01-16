@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="1245.0" style="-fx-background-color: #CCCCCC; -fx-background-radius: 80;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subway2feira.controllers.PlanTripController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" prefHeight="63.0" prefWidth="1245.0" text="Agendar Viagem - SubWay2Feira">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="104.0" layoutY="286.0" text="Partida:">
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbDeparture" layoutX="185.0" layoutY="281.0" prefHeight="30.0" prefWidth="182.0">
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </ComboBox>
+      <Label layoutX="90.0" layoutY="329.0" text="Destino:">
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <ComboBox fx:id="cbDestiny" layoutX="185.0" layoutY="323.0" prefHeight="32.0" prefWidth="181.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </ComboBox>
+      <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" layoutX="766.0" layoutY="60.0" prefHeight="20.0" prefWidth="152.0" text="Mapa:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConfirm" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="384.0" mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="116.0" style="-fx-background-color: transparent; -fx-background-radius: 80; -fx-border-radius: 80; -fx-border-width: 5; -fx-border-color: #46a049;" text="Confirmar">
+         <cursor>
+                     </cursor>
+      </Button>
+      <Button fx:id="btnClean" alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="384.0" mnemonicParsing="false" onAction="#cleanFields" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: transparent; -fx-background-radius: 80; -fx-border-radius: 80; -fx-border-width: 5; -fx-border-color: #46a049;" text="Limpar">
+         <cursor>
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="panel" layoutX="417.0" layoutY="74.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="806.0">
+         <children>
+            <ImageView fx:id="info" fitHeight="367.0" fitWidth="525.0" layoutX="148.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mapa.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pn_info" layoutX="79.0" layoutY="64.0" prefHeight="165.0" prefWidth="362.0">
+         <children>
+            <Label fx:id="lb_linhas" layoutY="64.0" text="Linhas: [Rosé,Tinto,Verde,Amarelo]">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_viagem" contentDisplay="CENTER" layoutY="28.0" text="Viagens: Partida -&gt; Destino">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_esta" layoutY="103.0" text="Total Estações: 1000">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_preco" layoutY="138.0" text="Preço: 0000.00 €">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_tempo" layoutX="160.0" layoutY="138.0" text="Tempo: 0000.0000min.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="titleTrip" layoutX="14.0" layoutY="-4.0" prefHeight="35.0" prefWidth="182.0" text="Label" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

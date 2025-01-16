@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subway2feira.controllers.ListXMLController">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="937.0">
+          <children>
+              <BorderPane layoutY="1.0" prefHeight="597.0" prefWidth="937.0">
+                  <bottom>
+                      <TabPane prefHeight="501.0" prefWidth="937.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="TOP_CENTER">
+                          <tabs>
+                              <Tab fx:id="lines" text="Linhas">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="1020.0">
+                                          <children>
+                                              <TableView fx:id="tvLines" layoutY="50.0" prefHeight="346.0" prefWidth="937.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                                                  <columns>
+                                                      <TableColumn fx:id="letter" prefWidth="75.0" text="Letra" />
+                                                      <TableColumn fx:id="color" prefWidth="75.0" text="Cor" />
+                                                  </columns>
+                                                  <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                  </columnResizePolicy>
+                                              </TableView>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab fx:id="stations" text="Estações">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="1020.0">
+                                          <children>
+                                              <TableView fx:id="tvStations" layoutX="-6.0" layoutY="46.0" prefHeight="346.0" prefWidth="937.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                                                  <columns>
+                                                      <TableColumn fx:id="columnName" prefWidth="75.0" text="Nome" />
+                                                      <TableColumn fx:id="columnPrice" prefWidth="75.0" text="Preço" />
+                                                  </columns>
+                                                  <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                  </columnResizePolicy>
+                                              </TableView>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                              <Tab fx:id="trip" text="Percursos">
+                                  <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="1020.0">
+                                          <children>
+                                              <TableView fx:id="tvTrip" layoutX="-6.0" layoutY="46.0" prefHeight="417.0" prefWidth="937.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+                                                  <columns>
+                                                      <TableColumn fx:id="departure" prefWidth="75.0" text="Partida" />
+                                                      <TableColumn fx:id="arrive" prefWidth="75.0" text="Chegada" />
+                                                      <TableColumn fx:id="duration" prefWidth="75.0" text="Duração" />
+                                                  </columns>
+                                                  <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                  </columnResizePolicy>
+                                              </TableView>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </Tab>
+                          </tabs>
+                          <BorderPane.margin>
+                              <Insets />
+                          </BorderPane.margin>
+                          <padding>
+                              <Insets bottom="10.0" />
+                          </padding>
+                      </TabPane>
+                  </bottom>
+                  <top>
+                      <Label alignment="CENTER" prefHeight="74.0" prefWidth="937.0" text="LISTA DO XML ATUAL" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                          <font>
+                              <Font name="Verdana" size="20.0" />
+                          </font>
+                      </Label>
+                  </top>
+              </BorderPane>
+          </children> 
+      </Pane>
+   </children>
+</HBox>

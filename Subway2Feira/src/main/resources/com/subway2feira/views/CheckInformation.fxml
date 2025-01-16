@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="342.0" prefWidth="672.0" style="-fx-background-radius: 80;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subway2feira.controllers.CheckInformationController">
+   <children>
+      <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="672.0" style="-fx-background-color: #CCCCCC; -fx-background-radius: 80;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" prefHeight="75.0" prefWidth="1063.0" text="Dados Cliente" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="-8.0">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" layoutX="8.0" layoutY="68.0" prefHeight="230.0" prefWidth="237.0" spacing="50.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="427.0">
+               <children>
+                  <Label fx:id="txtName" prefHeight="20.0" prefWidth="404.0" text="Nome:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtEmail" prefHeight="20.0" prefWidth="404.0" text="E-mail:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtNif" prefHeight="20.0" prefWidth="404.0" text="NIF:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtPass" prefHeight="20.0" prefWidth="404.0" text="Passe:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="344.0" layoutY="71.0" prefHeight="230.0" prefWidth="251.0">
+               <children>
+                  <Button fx:id="btnPass" layoutX="161.0" layoutY="191.0" mnemonicParsing="false" onAction="#activatePass" text="Pedir Passe" />
+                  <Label fx:id="lb_cat" layoutX="14.0" layoutY="45.0" text="Categoria: " />
+                  <Label fx:id="lb_state" layoutX="14.0" layoutY="138.0" text="Estado: " />
+                  <Label fx:id="lb_dis" layoutX="14.0" layoutY="87.0" text="Desconto: " />
+                  <Label layoutX="98.0" layoutY="6.0" text="Passe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

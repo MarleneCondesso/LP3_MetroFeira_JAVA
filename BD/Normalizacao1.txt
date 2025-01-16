@@ -1,0 +1,55 @@
+Base dados
+
+Utilizador
+	Id		int
+	Nome 		Nvarchar
+	Nif		int(9) ????
+	Email		Nvarchar 	
+	Password	Nvarchar
+	Salt(pass)	Nvarchar 
+
+
+Percurso
+	Id		int
+	Hora 		Time
+	Data		Date
+	Origem		Nvarchar
+	Destino 	Nvarchar
+	Preço		double
+	Tipo		Boolean
+
+Viagem
+	Trajeto.Id	int
+	Utilizador.Id	int
+	
+Trajeto
+	Id		int
+	Percurso.Id	int
+	Estacao.Id	int
+	Linha.Id	int
+
+
+Estacao
+	Id		int
+	Nome		Nvarchar
+
+Estacao/Linha
+	Estacao.ID	int
+	Linha.ID	int
+	
+Linha	
+	Id		int	
+	Cor		Nvarchar
+	Letra		char
+
+
+	
+
+
+
+
+
+
+
+
+

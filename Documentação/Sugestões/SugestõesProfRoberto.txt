@@ -1,0 +1,13 @@
+Definir melhor as user stories (usar as tasklist e descrição para definir as stories)
+CARREGAR AS COISAS A TEMPO.
+
+Ler documentação relativamente ao SCRUM.
+
+
+Nas opções considerar o custo/benefício.
+
+Sprint Theme- Declarar o valor da sprint ou seja melhor valia do programa para o Cliente.
+Tempos - Declarar tempo no nome dos Sprints.
+
+
+

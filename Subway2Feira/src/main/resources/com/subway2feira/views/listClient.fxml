@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="450.0" prefWidth="1063.0" spacing="10.0" style="-fx-background-radius: 80;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subway2feira.controllers.ListClientController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="1063.0" style="-fx-background-color: #CCCCCC; -fx-background-radius: 80;" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER" layoutX="48.0" layoutY="70.0" prefHeight="323.0" prefWidth="967.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <TableView fx:id="table" prefHeight="353.0" prefWidth="994.0">
+                    <columns>
+                      <TableColumn fx:id="name" prefWidth="75.0" text="Nome" />
+                      <TableColumn fx:id="email" prefWidth="75.0" text="E-mail" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children></HBox>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="29.0" prefHeight="59.0" prefWidth="1062.0" text="Lista de Clientes" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="404.0" prefHeight="17.0" prefWidth="892.0" text="* Para listar as viagens do cliente, selecione o cliente com DoubleClick por favor.">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

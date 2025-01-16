@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="principalPane" alignment="CENTER" prefHeight="465.0" prefWidth="400.0" style="-fx-background-radius: 80;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.subway2feira.controllers.ViewTicketController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="672.0" style="-fx-background-color: #cccccc; -fx-background-radius: 80;">
+         <children>
+            <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="672.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <AnchorPane layoutX="167.0" layoutY="14.0" prefHeight="347.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #000000;">
+               <children>
+                  <ImageView fx:id="qrcode" fitHeight="326.0" fitWidth="330.0" layoutX="13.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="167.0" layoutY="346.0" prefHeight="45.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25; -fx-border-color: #000000; -fx-border-radius: 25; -fx-border-style: solid solid none solid;">
+               <children>
+                  <Label fx:id="lb_trip" layoutX="286.0" layoutY="1.0" text="lb_trip" AnchorPane.rightAnchor="14.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="1.0" text="Viagem" AnchorPane.leftAnchor="14.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="166.0" layoutY="383.0" prefHeight="91.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #000000; -fx-border-style: dashed solid solid solid;">
+               <children>
+                  <Label layoutX="25.0" layoutY="12.0" text="Preço" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_price" layoutX="276.0" layoutY="12.0" text="lb_price" AnchorPane.rightAnchor="15.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="50.0" text="Duração" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lb_date" layoutX="278.0" layoutY="50.0" text="lb_date" AnchorPane.rightAnchor="15.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <padding>
+            <Insets left="10.0" right="5.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,4 +1,4 @@
-<h2 align="center">LP3 - Laboratorio de Projeto 3 - 2021/2022</h3>
+<h2 align="center">LP3 - Laboratório de Projeto 3 - 2021/2022</h3>
 
 
 
